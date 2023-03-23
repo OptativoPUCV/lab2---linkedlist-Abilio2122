@@ -162,3 +162,9 @@ list.c:44:10: error: expected expression before ‘List’
       |          ^~~~
 Compilation failed
 2fcfb71
+Thu 23 Mar 2023 03:48:40 PM UTC: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  2|5
+total_score: 15/70
+edd196f
