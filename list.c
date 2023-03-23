@@ -66,11 +66,10 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-  /*if(list->current->prev!=NULL){ 
+  if(list->current->prev!=NULL){ 
     list->current=list->current->prev;
     return list->current->data;
   }
-*/
   return NULL;
 }
 
@@ -117,7 +116,7 @@ void * popCurrent(List * list) {
     list->head=list->head->next;
     list->head->prev=NULL;
     return list->head;
-    }
+  }
 }
 
 void cleanList(List * list) {
