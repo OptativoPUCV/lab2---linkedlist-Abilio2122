@@ -145,3 +145,20 @@ Thu 23 Mar 2023 03:45:16 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 2984bf1
+Thu 23 Mar 2023 03:47:16 PM UTC: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:6: error: expected ‘(’ before ‘List’
+   40 |   if List->head==NULL;
+      |      ^~~~
+      |      (
+list.c:42:7: error: expected identifier or ‘(’ before ‘->’ token
+   42 |   List->head
+      |       ^~
+list.c:44:10: error: expected expression before ‘List’
+   44 |   return List->current->data;
+      |          ^~~~
+Compilation failed
+2fcfb71
