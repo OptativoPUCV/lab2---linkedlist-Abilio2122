@@ -66,7 +66,7 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-  if(list->current->prev)
+  if(list->current->prev){ 
     list->current=list->current->prev;
     return list->current->data;
   }
