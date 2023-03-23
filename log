@@ -212,3 +212,20 @@ Thu 23 Mar 2023 07:38:46 PM UTC:
  1 file changed, 2 insertions(+)
  tests:  0|0
 fcdf41e
+Thu 23 Mar 2023 07:40:33 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:69:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   69 |   if(list->current->prev)
+      |   ^~
+list.c:71:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   71 |     return list->current->data;
+      |     ^~~~~~
+list.c:72:3: error: ‘else’ without a previous ‘if’
+   72 |   else{
+      |   ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6b6382e
