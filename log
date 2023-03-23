@@ -229,3 +229,24 @@ list.c:72:3: error: ‘else’ without a previous ‘if’
 cc1: all warnings being treated as errors
 Compilation failed
 6b6382e
+Thu 23 Mar 2023 07:40:49 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:69:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   69 |   if(list->current->prev)
+      |   ^~
+list.c:71:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   71 |     return list->current->data;
+      |     ^~~~~~
+list.c: At top level:
+list.c:73:3: error: expected identifier or ‘(’ before ‘else’
+   73 |   else{
+      |   ^~~~
+list.c:76:1: error: expected identifier or ‘(’ before ‘}’ token
+   76 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9328756
