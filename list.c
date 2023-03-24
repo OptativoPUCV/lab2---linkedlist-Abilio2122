@@ -141,5 +141,3 @@ void cleanList(List * list) {
 }
 
 
-
-  | | |
