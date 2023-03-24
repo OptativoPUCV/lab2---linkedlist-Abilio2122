@@ -488,3 +488,9 @@ list.c:69:25: error: expected ‘)’ before ‘;’ token
       |     ~                   ^
 Compilation failed
 831fc8d
+Fri 24 Mar 2023 05:47:05 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+a102fab
