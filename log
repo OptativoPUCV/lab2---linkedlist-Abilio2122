@@ -500,3 +500,13 @@ Fri 24 Mar 2023 05:52:45 PM UTC:
  tests:  10|2
 total_score: 45/70
 b79e85b
+Fri 24 Mar 2023 06:01:31 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:87:3: error: ‘else’ without a previous ‘if’
+   87 |   else{
+      |   ^~~~
+Compilation failed
+08fe95e
