@@ -683,3 +683,33 @@ list.c:135:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 2e7a16f
+Fri 24 Mar 2023 11:25:04 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c:145:3: error: expected identifier or ‘(’ before ‘|’ token
+  145 |   | | |
+      |   ^
+test.c: In function ‘test_first_next’:
+test.c:107:17: error: ‘msg’ undeclared (first use in this function)
+  107 |         sprintf(msg,"firstList retorna %d",*j);
+      |                 ^~~
+test.c:107:17: note: each undeclared identifier is reported only once for each function it appears in
+test.c: In function ‘test_last_prev’:
+test.c:180:17: error: ‘msg’ undeclared (first use in this function)
+  180 |         sprintf(msg,"lastList retorna %d",*j);
+      |                 ^~~
+test.c: In function ‘test_pushfront’:
+test.c:240:13: error: ‘msg’ undeclared (first use in this function)
+  240 |     sprintf(msg, "Insertando %d a la lista (pushfront)",*j);
+      |             ^~~
+test.c: In function ‘test_pushcurrent’:
+test.c:307:13: error: ‘msg’ undeclared (first use in this function)
+  307 |     sprintf(msg, "pushFront(%d)",*j);
+      |             ^~~
+test.c: In function ‘test_popcurrent’:
+test.c:381:17: error: ‘msg’ undeclared (first use in this function)
+  381 |         sprintf(msg,"PopCurrent retorna %d",*k);
+      |                 ^~~
+Compilation failed
+5e3eb9c
