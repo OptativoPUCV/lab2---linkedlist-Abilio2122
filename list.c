@@ -15,7 +15,7 @@ struct List {
     Node * head;
     Node * tail;
     Node * current;
-}
+};
 
 typedef List List;
 

@@ -745,3 +745,9 @@ list.c:20:1: error: useless type name in empty declaration [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 682c615
+Fri 24 Mar 2023 11:36:49 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+2e2c4db
