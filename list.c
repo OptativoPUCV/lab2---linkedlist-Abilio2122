@@ -15,7 +15,7 @@ struct List {
     Node * head;
     Node * tail;
     Node * current;
-};
+}
 
 typedef List List;
 
@@ -101,7 +101,6 @@ void pushCurrent(List * list, void * data) {
   n->prev=list->current;
   list->current->next=n;
   list->tail=n;
-
 }
 
 void * popFront(List * list) {
@@ -139,5 +138,3 @@ void cleanList(List * list) {
         popFront(list);
     }
 }
-
-
