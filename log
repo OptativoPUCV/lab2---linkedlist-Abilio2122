@@ -478,3 +478,13 @@ Thu 23 Mar 2023 10:19:39 PM UTC:
  tests:  7|3
 total_score: 35/70
 6270e60
+Fri 24 Mar 2023 05:46:56 PM UTC: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:69:25: error: expected ‘)’ before ‘;’ token
+   69 |   if(list->current==NULL;){
+      |     ~                   ^
+Compilation failed
+831fc8d
