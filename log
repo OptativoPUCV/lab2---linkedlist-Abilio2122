@@ -1109,3 +1109,33 @@ Sat 25 Mar 2023 11:31:47 PM UTC:
  tests:  12|0
 total_score: 70/70
 4eca26c
+Sat 25 Mar 2023 11:36:49 PM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+list.c:149:1: error: expected identifier or ‘(’ before ‘||’ token
+  149 | |||||
+      | ^~
+test.c: In function ‘test_first_next’:
+test.c:107:17: error: ‘msg’ undeclared (first use in this function)
+  107 |         sprintf(msg,"firstList retorna %d",*j);
+      |                 ^~~
+test.c:107:17: note: each undeclared identifier is reported only once for each function it appears in
+test.c: In function ‘test_last_prev’:
+test.c:180:17: error: ‘msg’ undeclared (first use in this function)
+  180 |         sprintf(msg,"lastList retorna %d",*j);
+      |                 ^~~
+test.c: In function ‘test_pushfront’:
+test.c:240:13: error: ‘msg’ undeclared (first use in this function)
+  240 |     sprintf(msg, "Insertando %d a la lista (pushfront)",*j);
+      |             ^~~
+test.c: In function ‘test_pushcurrent’:
+test.c:307:13: error: ‘msg’ undeclared (first use in this function)
+  307 |     sprintf(msg, "pushFront(%d)",*j);
+      |             ^~~
+test.c: In function ‘test_popcurrent’:
+test.c:381:17: error: ‘msg’ undeclared (first use in this function)
+  381 |         sprintf(msg,"PopCurrent retorna %d",*k);
+      |                 ^~~
+Compilation failed
+f40fcdd

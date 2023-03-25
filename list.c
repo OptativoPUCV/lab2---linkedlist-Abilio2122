@@ -100,7 +100,8 @@ void pushCurrent(List * list, void * data) {
   Node * n = createNode(data);
   n->prev=list->current;
   list->current->next=n;
-  list->tail=n;
+  if(list->current==list->tail)
+    list->tail=n;
 }
 
 void * popFront(List * list) {
@@ -143,4 +144,6 @@ void cleanList(List * list) {
     }
 }
 
- 
+
+
+|||||
