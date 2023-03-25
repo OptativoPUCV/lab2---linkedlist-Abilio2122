@@ -116,14 +116,14 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   void * aux=list->current->data;
   //si el current esta al final de la lista
-  if(list->current->prev!=NULL&&list->current->next==NULL){
+  /*if(list->current->prev!=NULL&&list->current->next==NULL){
     list->current=list->current->next;
   }
   //si el current no tiene extremos nulos
   else if(list->current->prev!=NULL&&list->current->next!=NULL){ 
     list->current->prev->next=list->current->next;
     list->current->next->prev=NULL;
-  }
+  }*/
   //si el current esta al principio de la lista
   else if(list->current==list->head){
     list->current=list->current->next;
