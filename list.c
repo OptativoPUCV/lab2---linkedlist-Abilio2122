@@ -115,6 +115,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   void * aux=list->current->data;
+  list->current=NULL;
   //si el current esta al final de la lista
   /*if(list->current->prev!=NULL&&list->current->next==NULL){
     list->current=list->current->next;
@@ -132,7 +133,6 @@ void * popCurrent(List * list) {
     list->head->prev=list->current;
   }
   //retorno dato eliminado
-  list->current=NULL;
   return aux;
 }
 
