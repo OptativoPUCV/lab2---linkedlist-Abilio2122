@@ -116,7 +116,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   void * aux=list->current->data;
   //si el current esta al final de la lista
-  /*if(list->current==list->tail){
+  if(list->current==list->tail){
     list->tail=list->current->prev;
     list->current->prev=NULL;
   }
