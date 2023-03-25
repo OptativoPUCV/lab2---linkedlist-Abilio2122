@@ -118,6 +118,7 @@ void * popCurrent(List * list) {
   //si el current esta al final de la lista
   if(list->current==list->tail){
     list->tail=list->current->prev;
+    list->tail->next=NULL;
     list->current->prev=NULL;
   }
   //si el current no tiene extremos nulos
