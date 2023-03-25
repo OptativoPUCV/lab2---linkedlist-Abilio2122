@@ -125,10 +125,11 @@ void * popCurrent(List * list) {
     list->current->next->prev=NULL;
   }*/
   //si el current esta al principio de la lista
-  if(list->current->prev==NULL){
+  if(list->current==list->head){
     list->current=list->current->next;
     //list->head->prev=NULL;
     list->current->prev=NULL;
+    list->head=list->current;
   }
   //retorno dato eliminado
   return aux;
