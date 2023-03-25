@@ -116,25 +116,22 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   void * aux=list->current->data;
   //si el current esta al final de la lista
-  /*if(list->current->prev!=NULL&&list->current->next==NULL){
-    list->current=list->current->next;
+  /*if(list->current==list->tail){
+    list->current->prev=NULL;
   }
   //si el current no tiene extremos nulos
   else if(list->current->prev!=NULL&&list->current->next!=NULL){ 
     list->current->prev->next=list->current->next;
-    list->current->next->prev=NULL;
-  }*/
+    list->current->next->prev=list->current->prev;
+  }
   //si el current esta al principio de la lista
   if(list->current==list->head){
     list->head=list->head->next;
-    //list->head->prev=NULL;
-    //list->current->next=list->head;
-    list->current=list->head;
     list->head->prev=NULL;
-    //list->head->next=list->current;
 
   }
   //retorno dato eliminado
+  list->current=list->current->next;
   return aux;
 }
 
@@ -143,3 +140,5 @@ void cleanList(List * list) {
         popFront(list);
     }
 }
+
+ ||||||
