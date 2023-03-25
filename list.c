@@ -131,7 +131,7 @@ void * popCurrent(List * list) {
     //list->current->next=list->head;
     list->current=NULL;
     list->head->prev=list->current;
-    list->head->next=list->current;
+    //list->head->next=list->current;
 
   }
   //retorno dato eliminado
