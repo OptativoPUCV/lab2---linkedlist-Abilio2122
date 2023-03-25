@@ -880,3 +880,9 @@ list.c:128:3: error: ‘else’ without a previous ‘if’
       |   ^~~~
 Compilation failed
 a1579e5
+Sat 25 Mar 2023 10:25:09 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+9dcadac
