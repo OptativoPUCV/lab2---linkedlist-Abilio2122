@@ -823,3 +823,9 @@ list.c:99:6: error: old-style parameter declarations in prototyped function defi
 test.c:469: error: expected ‘{’ at end of input
 Compilation failed
 3e7a025
+Sat 25 Mar 2023 10:20:53 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+834d87a
